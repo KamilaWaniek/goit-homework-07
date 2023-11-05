@@ -81,6 +81,59 @@ ol {
     padding: 96px 0;
   }
 
+  /* ----------------------------- EFFECTIVE SOLUTION HEADLINE ------------------------------------ */
+
+  .section-headline-background {
+    background: var(--main-page-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office1.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin: 0 auto;
+  }
+
+  .main-page-header {
+    color: var(--background-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.72px;
+    text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .button-order-service {
+    font-family: "Roboto", sans-serif;
+    color: var(--background-color);
+    background-color: var(--main-page-color-2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    transition: background-color 250ms var(--transition-variable);
+  }
+
+  .button-order-service:hover,
+  .button-order-service:focus {
+    background-color: var(--active-links-color);
+  }
+
   /* ------------------------------------- MAIN GOALS SECTION ------------------------------------- */
 
   .company-main-goals-flex {
@@ -218,11 +271,68 @@ ol {
     padding: 96px 0;
   }
 
+  /* ----------------------------- EFFECTIVE SOLUTION HEADLINE ------------------------------------ */
+
+  .section-headline-background {
+    background: var(--main-page-color);
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/office2.jpg);
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    margin: 0 auto;
+  }
+
+  .main-page-header {
+    color: var(--background-color);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07em;
+    letter-spacing: 1.12px;
+    text-align: center;
+    max-width: 496px;
+    margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  .button-order-service {
+    font-family: "Roboto", sans-serif;
+    color: var(--background-color);
+    background-color: var(--main-page-color-2);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    transition: background-color 250ms var(--transition-variable);
+  }
+
+  .button-order-service:hover,
+  .button-order-service:focus {
+    background-color: var(--active-links-color);
+  }
+
   /* ------------------------------------- MAIN GOALS SECTION ------------------------------------- */
+
+  .main-goals-section {
+    margin-left: 16px;
+  }
 
   .company-main-goals-flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
