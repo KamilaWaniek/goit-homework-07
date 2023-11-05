@@ -222,6 +222,7 @@ ol {
 
   .company-main-goals-flex {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
@@ -234,8 +235,6 @@ ol {
     line-height: 1.11em;
     letter-spacing: 0.72px;
     margin-bottom: 8px;
-    margin-left: 16px;
-    margin-right: 16px;
   }
 
   .main-goals-text {
@@ -279,7 +278,8 @@ ol {
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 64px;
-    margin: 0 108px;
+    margin-left: 108px;
+    margin-right: 108px;
   }
 
   .background-our-team {
@@ -603,6 +603,7 @@ ol {
 
   .flex-our-team {
     display: flex;
+    justify-content: center;
     gap: 24px;
   }
 
@@ -619,7 +620,7 @@ ol {
 
   .background-our-team {
     background-color: #f4f4fd;
-    padding: 120px 0;
+    padding: 120px;
   }
 
   .background-team-members {
