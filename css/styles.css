@@ -85,7 +85,7 @@ ol {
 
   .company-main-goals-flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 72px;
   }
 
@@ -110,10 +110,244 @@ ol {
   .main-goals-button {
     display: none;
   }
+
+  /* ---------------------------------WHAT ARE WE DOING SECTION ----------------------------------- */
+
+  .third-section {
+    display: none;
+  }
+
+  /* ------------------------------------- OUR TEAM SECTION --------------------------------------- */
+
+  .header-our-team {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    color: var(--main-page-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .flex-our-team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .background-our-team {
+    background-color: #f4f4fd;
+    padding-bottom: 72px;
+  }
+
+  .background-team-members {
+    background-color: var(--background-color);
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .company-team-members {
+    color: var(--main-page-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .team-members-names {
+    padding: 32px 0px;
+    text-align: center;
+  }
+
+  .team-member-position {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+  }
+
+  .social-media-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .social-media-list {
+    width: 40px;
+    height: 40px;
+  }
+
+  .team-social-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-page-color-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--transition-variable);
+  }
+
+  .team-social-link:hover,
+  .team-social-link:focus {
+    background-color: var(--active-links-color);
+  }
+
+  .team-social-item {
+    fill: var(--main-text-color-2);
+  }
 }
 
 /* -------------------------------------------------- TABLET ---------------------------------------------------------*/
 @media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .section {
+    padding: 96px 0;
+  }
+
+  /* ------------------------------------- MAIN GOALS SECTION ------------------------------------- */
+
+  .company-main-goals-flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .company-main-goals {
+    color: var(--main-page-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.72px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .main-goals-text {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+  }
+
+  .main-goals-button {
+    display: none;
+  }
+
+  .main-goals-description {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  /* ---------------------------------WHAT ARE WE DOING SECTION ----------------------------------- */
+
+  .third-section {
+    display: none;
+  }
+
+  /* ------------------------------------- OUR TEAM SECTION --------------------------------------- */
+
+  .header-our-team {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    color: var(--main-page-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11em;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+
+  .flex-our-team {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 64px;
+    margin: 0 108px;
+  }
+
+  .background-our-team {
+    background-color: #f4f4fd;
+    padding-bottom: 72px;
+  }
+
+  .background-team-members {
+    background-color: var(--background-color);
+    flex-basis: calc((100% - 24px) / 2);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .company-team-members {
+    color: var(--main-page-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+  }
+
+  .team-members-names {
+    padding: 32px 0px;
+    text-align: center;
+  }
+
+  .team-member-position {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+  }
+
+  .social-media-links {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+  }
+
+  .social-media-list {
+    width: 40px;
+    height: 40px;
+  }
+
+  .team-social-link {
+    width: 40px;
+    height: 40px;
+    background-color: var(--main-page-color-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--transition-variable);
+  }
+
+  .team-social-link:hover,
+  .team-social-link:focus {
+    background-color: var(--active-links-color);
+  }
+
+  .team-social-item {
+    fill: var(--main-text-color-2);
+  }
 }
 
 /* ------------------------------------------------ NOT DEKSTOP ------------------------------------------------------*/
