@@ -95,14 +95,29 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/office1.jpg);
+      url(../images/office-mobile.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 112px;
     padding-bottom: 112px;
+    width: 100%;
+    height: 432px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-headline-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-mobile@x2.jpg);
+    }
   }
 
   .main-page-header {
@@ -808,14 +823,29 @@ ol {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/office2.jpg);
+      url(../images/office-tablet.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 112px;
     padding-bottom: 112px;
+    width: 100%;
+    height: 432px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-headline-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-tablet@x2.jpg);
+    }
   }
 
   .main-page-header {
@@ -1530,6 +1560,9 @@ ol {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -1537,6 +1570,19 @@ ol {
     padding-top: 188px;
     padding-bottom: 188px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-headline-background {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office@x2.jpg);
+    }
   }
 
   .main-page-header {
