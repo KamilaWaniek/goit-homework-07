@@ -74,7 +74,7 @@ ol {
 /* ------------------------------------------------- MOBILE ---------------------------------------------------------*/
 @media screen and (max-width: 767px) {
   .container {
-    width: 428px;
+    max-width: 428px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -672,9 +672,9 @@ ol {
 }
 
 /* -------------------------------------------------- TABLET ---------------------------------------------------------*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .section {
@@ -1127,11 +1127,165 @@ ol {
   opacity: 0;
 }
 
+/* ---------------------------------------- FOOTER SECTION ----------------------------------------*/
+
+.footer-background {
+  background-color: var(--main-page-color);
+  padding: 96px 0;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+  max-width: 550px;
+}
+
+.footer-section-left {
+  margin-bottom: 72px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-website-logo {
+  font-family: "Raleway", sans-serif;
+  color: var(--main-page-color-2);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17em;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.studio-website-logo {
+  color: var(--main-text-color-2);
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17em;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+}
+
+.footer-main-text {
+  color: var(--main-text-color-2);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  max-width: 264px;
+}
+
+.footer-social-media {
+  color: var(--background-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.footer-social-icons {
+  background-color: var(--main-page-color-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  transition: background-color 250ms var(--transition-variable);
+}
+
+.footer-social-icons:hover,
+.footer-social-icons:focus {
+  background-color: var(--active-links-color-2);
+}
+
+.footer-social-media-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-media-list {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-subscribe {
+  color: var(--background-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-form input[placeholder] {
+  color: var(--background-color);
+}
+
+.footer-form-input {
+  gap: 24px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  color: var(--background-color);
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  border: 1px solid var(--background-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+}
+
+.footer-form-button {
+  min-width: 165px;
+  height: 40px;
+  color: var(--background-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--main-page-color-2);
+}
+
+.subscribe-icon {
+  margin-left: 16px;
+}
+
 /* ------------------------------------------------- DESKTOP ---------------------------------------------------------*/
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -1498,7 +1652,7 @@ ol {
     fill: currentColor;
   }
 
-  /* ---------------------------------------- FOOTER SECTION ----------------------------------------*/
+  /* FOOTER SECTION */
 
   .footer-background {
     background-color: var(--main-page-color);
