@@ -87,6 +87,116 @@ ol {
     padding: 96px 0;
   }
 
+  /* ---------------------------------- HEADER SECTION --------------------------------- */
+
+  .header {
+    border-bottom: 1px solid var(--background-color-2);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-navigation {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-list {
+    display: flex;
+    gap: 40px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--main-page-color);
+    font-family: "Raleway", sans-serif;
+  }
+
+  .website-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--active-links-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-right: 76px;
+  }
+
+  .table-of-contents {
+    color: var(--main-page-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    padding: 24px 0;
+    transition: color 250ms var(--transition-variable);
+    position: relative;
+  }
+
+  .page-navigation-studio {
+    color: var(--active-links-color);
+    position: relative;
+  }
+  .page-navigation-studio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 2px;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--active-links-color);
+    border-radius: 2px;
+  }
+
+  .page-navigation-portfolio {
+    color: var(--active-links-color);
+    position: relative;
+  }
+
+  .page-navigation-portfolio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 2px;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--active-links-color);
+    border-radius: 2px;
+  }
+
+  .header-contacts {
+    font-style: normal;
+  }
+
+  .mail-address-phone-number {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    padding: 24px 0;
+    transition: color 250ms var(--transition-variable);
+  }
+
+  .table-of-contents:hover,
+  .table-of-contents:focus,
+  .mail-address-phone-number:hover,
+  .mail-address-phone-number:focus {
+    color: var(--active-links-color);
+  }
+
   /* ----------------------------- EFFECTIVE SOLUTION HEADLINE ------------------------------------ */
 
   .section-headline-background {
@@ -475,6 +585,181 @@ ol {
 
   .subscribe-icon {
     margin-left: 16px;
+  }
+
+  /* -------------------------- HAMBURGER MOBILE --------------------------- */
+
+  .button-hamburger {
+    border: none;
+    background-color: var(--white-color);
+  }
+
+  .menu-hamburger {
+    display: flex;
+    margin-top: 24px;
+    margin-right: 16px;
+    margin-bottom: 24px;
+  }
+
+  .menu-container-a {
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px;
+    background-color: #fff;
+    z-index: 999;
+    transform: translateY(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container-a.is-open {
+    transform: translateY(0);
+  }
+
+  .hamburger-div {
+    margin: auto;
+    max-width: 428px;
+  }
+
+  .hamburger-button-container {
+    display: flex;
+  }
+
+  .hamburger-close-button {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color var(--mytransition-duration)
+        var(--mytransition-timing-function),
+      border var(--mytransition-duration) var(--mytransition-timing-function);
+  }
+
+  .hamburger-close-button:hover,
+  .hamburger-close-button:focus {
+    background-color: var(--ocean-color);
+    border: none;
+  }
+
+  .hamburger-close-svg {
+    fill: var(--navyblue-color);
+    width: 8px;
+    height: 8px;
+  }
+
+  .hamburger-close-button:hover > .hamburger-close-svg,
+  .hamburger-close-button:focus > .hamburger-close-svg {
+    fill: var(--white-color);
+  }
+
+  .hamburger-navigation {
+    padding-left: 40px;
+    padding-top: 80px;
+  }
+
+  .hamburger-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hamburger-nav-link {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--navyblue-color);
+    transition: color var(--mytransition-duration)
+      var(--mytransition-timing-function);
+  }
+
+  .hamburger-nav-link:hover,
+  .hamburger-nav-link:focus {
+    color: var(--ocean-color);
+  }
+
+  .hamburger-address {
+    padding-top: 284px;
+  }
+
+  .hamburger-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 40px;
+  }
+
+  .hamburger-phone {
+    color: #4d5ae5;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+
+  .hamburger-mail {
+    color: #434455;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+
+  .hamburger-social-media-list {
+    display: flex;
+    gap: 56px;
+    margin-top: 48px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+  }
+
+  .hamburger-social-media-li {
+    height: 40px;
+    width: 40px;
+  }
+
+  .hamburger-social-media-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color var(--mytransition-duration)
+      var(--mytransition-timing-function);
+  }
+
+  .hamburger-social-media-link:hover,
+  .hamburger-social-media-link:focus {
+    background-color: var(--ocean-color);
+  }
+
+  .hamburger-svg {
+    fill: var(--cloud-color);
+    width: 16px;
+    height: 16px;
   }
 
   /* ---------------------- DATA MODAL WINDOW -------------------------- */
