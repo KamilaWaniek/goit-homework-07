@@ -690,6 +690,116 @@ ol {
     padding: 96px 0;
   }
 
+  /* ----------------------------- HEADER SECTION ------------------------------- */
+
+  .header {
+    border-bottom: 1px solid var(--background-color-2);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
+  .header-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-navigation {
+    display: flex;
+    gap: 40px;
+  }
+
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--main-page-color);
+    font-family: "Raleway", sans-serif;
+  }
+
+  .website-logo {
+    font-family: "Raleway", sans-serif;
+    color: var(--active-links-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17em;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    margin-right: 76px;
+  }
+
+  .table-of-contents {
+    color: var(--main-page-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    padding: 24px 0;
+    transition: color 250ms var(--transition-variable);
+    position: relative;
+  }
+
+  .page-navigation-studio {
+    color: var(--active-links-color);
+    position: relative;
+  }
+  .page-navigation-studio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 2px;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--active-links-color);
+    border-radius: 2px;
+  }
+
+  .page-navigation-portfolio {
+    color: var(--active-links-color);
+    position: relative;
+  }
+
+  .page-navigation-portfolio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 2px;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--active-links-color);
+    border-radius: 2px;
+  }
+
+  .header-contacts {
+    font-style: normal;
+  }
+
+  .mail-address-phone-number {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.32px;
+    display: inline-block;
+    transition: color 250ms var(--transition-variable);
+  }
+
+  .table-of-contents:hover,
+  .table-of-contents:focus,
+  .mail-address-phone-number:hover,
+  .mail-address-phone-number:focus {
+    color: var(--active-links-color);
+  }
+
   /* ----------------------------- EFFECTIVE SOLUTION HEADLINE ------------------------------------ */
 
   .section-headline-background {
