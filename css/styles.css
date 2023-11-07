@@ -1432,7 +1432,7 @@ ol {
 
 /* ------------------------------------------------- DESKTOP ---------------------------------------------------------*/
 
-@media screen and (min-width: 1158px) and (max-width: 1199px) {
+@media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
