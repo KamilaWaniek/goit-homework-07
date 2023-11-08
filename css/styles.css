@@ -1713,6 +1713,10 @@ ol {
   .menu-hamburger {
     display: none;
   }
+
+  .menu-container-a {
+    display: none;
+  }
 }
 
 /* ------------------------------------------------- DESKTOP ---------------------------------------------------------*/
@@ -2471,6 +2475,10 @@ ol {
   /* -------------------------- HAMBURGER MOBILE --------------------------- */
 
   .menu-hamburger {
+    display: none;
+  }
+
+  .menu-container-a {
     display: none;
   }
 }
