@@ -536,7 +536,9 @@ ol {
 
   .footer-form {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
   .footer-form input[placeholder] {
@@ -544,8 +546,7 @@ ol {
   }
 
   .footer-form-input {
-    gap: 24px;
-    width: 264px;
+    width: 398px;
     height: 40px;
     background-color: transparent;
     color: var(--background-color);
