@@ -592,6 +592,7 @@ ol {
   .button-hamburger {
     border: none;
     background-color: var(--background-color);
+    stroke: var(--main-page-color);
   }
 
   .menu-hamburger {
