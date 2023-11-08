@@ -1,1 +1,1 @@
-https://kamilawaniek.github.io/goit-markup-hw-07/
+https://kamilawaniek.github.io/goit-homework-07/
