@@ -591,7 +591,7 @@ ol {
 
   .button-hamburger {
     border: none;
-    background-color: var(--white-color);
+    background-color: var(--background-color);
   }
 
   .menu-hamburger {
@@ -609,7 +609,7 @@ ol {
     width: 100%;
     height: 100%;
     padding: 32px;
-    background-color: #fff;
+    background-color: var(--background-color);
     z-index: 999;
     transform: translateY(100%);
     transition: transform 250ms ease-in-out;
@@ -638,30 +638,29 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7e9fc;
+    background-color: var(--background-color-2);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
-    transition: background-color var(--mytransition-duration)
-        var(--mytransition-timing-function),
-      border var(--mytransition-duration) var(--mytransition-timing-function);
+    transition: background-color 250ms var(--transition-variable),
+      border 250ms var(--transition-variable);
   }
 
   .hamburger-close-button:hover,
   .hamburger-close-button:focus {
-    background-color: var(--ocean-color);
+    background-color: var(--active-links-color);
     border: none;
   }
 
   .hamburger-close-svg {
-    fill: var(--navyblue-color);
+    fill: var(--main-page-color);
     width: 8px;
     height: 8px;
   }
 
   .hamburger-close-button:hover > .hamburger-close-svg,
   .hamburger-close-button:focus > .hamburger-close-svg {
-    fill: var(--white-color);
+    fill: var(--background-color);
   }
 
   .hamburger-navigation {
@@ -683,14 +682,13 @@ ol {
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    color: var(--navyblue-color);
-    transition: color var(--mytransition-duration)
-      var(--mytransition-timing-function);
+    color: var(--main-page-color);
+    transition: color 250ms var(--transition-variable);
   }
 
   .hamburger-nav-link:hover,
   .hamburger-nav-link:focus {
-    color: var(--ocean-color);
+    color: var(--active-links-color);
   }
 
   .hamburger-address {
@@ -705,7 +703,7 @@ ol {
   }
 
   .hamburger-phone {
-    color: #4d5ae5;
+    color: var(--main-page-color-2);
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -717,7 +715,7 @@ ol {
   }
 
   .hamburger-mail {
-    color: #434455;
+    color: var(--main-text-color);
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -742,22 +740,21 @@ ol {
   .hamburger-social-media-link {
     width: 100%;
     height: 100%;
-    background-color: var(--iris-color);
+    background-color: var(--main-page-color-2);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color var(--mytransition-duration)
-      var(--mytransition-timing-function);
+    transition: background-color 250ms var(--transition-variable);
   }
 
   .hamburger-social-media-link:hover,
   .hamburger-social-media-link:focus {
-    background-color: var(--ocean-color);
+    background-color: var(--main-page-color-2);
   }
 
   .hamburger-svg {
-    fill: var(--cloud-color);
+    fill: var(--main-text-color-2);
     width: 16px;
     height: 16px;
   }
