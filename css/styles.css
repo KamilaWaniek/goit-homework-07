@@ -102,8 +102,7 @@ ol {
   }
 
   .page-navigation {
-    display: flex;
-    gap: 40px;
+    display: none;
   }
 
   .address-list {
@@ -176,7 +175,7 @@ ol {
   }
 
   .header-contacts {
-    font-style: normal;
+    display: none;
   }
 
   .mail-address-phone-number {
@@ -1343,7 +1342,7 @@ ol {
     fill: currentColor;
   }
 
-  /* -------------------- DATA MODAL WINDOW ------------------------ */
+  /* ---------------------------- DATA MODAL WINDOW -------------------------------- */
 
   .data-modal-backdrop {
     position: fixed;
@@ -1712,6 +1711,12 @@ ol {
 
   .subscribe-icon {
     margin-left: 16px;
+  }
+
+  /* -------------------------- HAMBURGER MOBILE --------------------------- */
+
+  .menu-hamburger {
+    display: none;
   }
 }
 
@@ -2466,5 +2471,11 @@ ol {
     pointer-events: none;
     visibility: hidden;
     opacity: 0;
+  }
+
+  /* -------------------------- HAMBURGER MOBILE --------------------------- */
+
+  .menu-hamburger {
+    display: none;
   }
 }
