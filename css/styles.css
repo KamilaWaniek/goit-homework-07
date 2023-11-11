@@ -269,6 +269,7 @@ ol {
   .company-main-goals-flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 72px;
   }
 
@@ -727,7 +728,7 @@ ol {
 
   .hamburger-social-media-list {
     display: flex;
-    gap: 56px;
+    justify-content: space-between;
     margin-top: 48px;
     margin-bottom: 40px;
     margin-left: 40px;
@@ -978,7 +979,36 @@ ol {
   }
 }
 
+/* --------------------------------------------- MOBILE MAX 428PX ------------------------------------------------ */
+
+@media screen and (max-width: 428px) {
+  .footer-form-input {
+    max-width: 300px;
+  }
+
+  .hamburger-social-media-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: var(--background-color-modal-window);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    transition: transform 250ms var(--transition-variable);
+    padding: 72px 24px 24px 24px;
+  }
+}
+
 /* -------------------------------------------------- TABLET ---------------------------------------------------------*/
+
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
     max-width: 768px;
